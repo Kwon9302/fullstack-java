@@ -36,6 +36,6 @@ public class PaySystem2 {
     public void selectAmount(){
         System.out.println("결제 금액을 입력하세요 : ");
         int amount = scanner.nextInt();
-        this.findPay(amount);
+        this.payment(amount);
     }
 }
