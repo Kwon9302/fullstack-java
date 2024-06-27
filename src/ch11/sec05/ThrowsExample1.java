@@ -11,5 +11,8 @@ public class ThrowsExample1 {
     }
     public static void findClass() throws ClassNotFoundException {
         Class.forName("java.lang.String2");
+        String secretKey = System.getenv("JWT_SECRET_KEY");
+
     }
+
 }
