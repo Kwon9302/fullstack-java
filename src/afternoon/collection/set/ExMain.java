@@ -1,0 +1,24 @@
+package afternoon.collection.set;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class ExMain {
+    public static void main(String[] args) {
+        int[] arr = new int[10];
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = (int) (Math.random() * 10);
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            set.add(arr[i]);
+        }
+        if(set.size()==arr.length){
+            System.out.println("중복이 아니다");
+        } else {
+            System.out.println("중복이다");
+        }
+
+    }
+}
